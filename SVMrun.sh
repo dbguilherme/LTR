@@ -1,20 +1,20 @@
 #bin/bash
 
 #c=2.5 2004
-c=0.002
-binsto=1
+c=0.1
+binsto=5
 k=1
 #fold="/home/guilherme/Downloads/OHSUMED/QueryLevelNorm/Fold"
 #fold="/home/guilherme/Downloads/MSLR-WEB10K_1/Fold"
 fold="/home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold"
 memoria=0
 c_stored=0
-while [ "$(bc <<< "$c < 0.003")" == "1"  ]; do
+while [ "$(bc <<< "$c < 50")" == "1"  ]; do
     SUM=0;
     SUMMAP=0
     while [ $k -le $binsto ]; do
-        #svmRank/./svm_rank_learn  -c $c /tmp/training_file_sort.txt model
-        svmRank/./svm_rank_learn  -c $c $fold$k/train_sort.txt model
+        svmRank/./svm_rank_learn  -c $c /tmp/training_file_sort$k.txt model
+        #svmRank/./svm_rank_learn  -c $c $fold$k/train_sort.txt model
         svmRank/./svm_rank_classify $fold$k/test_sort.txt model predictions
         perl   svmRank/Eval-Score-3.0.pl $fold$k/test_sort.txt predictions out 0
         echo "MAP obtido para o Fold$k $c $suffix: `cat out | grep MAP | awk '{ print $2 }'`"

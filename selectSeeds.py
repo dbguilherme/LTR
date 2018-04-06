@@ -2,16 +2,17 @@ import os
 
 
 
-for k in range(1,6):
-    fold="/home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold"+str(i)+"/train_sort.txt"
-    l2_out="/tmp/leknng_saida"+str(i)
+for x in range(1,6):
+    print ("fold ", x , "\n")
+    fold="/home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold"+str(x)+"/train_sort.txt"
+    l2_out="/tmp/leknng_saida"+str(x)
     reader = (open(l2_out))
     temp=0
     #str="rm /tmp/saida_processada"
     #
-    out_file="/tmp/saida_processada"+str(i)
+    out_file="/tmp/saida_processada"+str(x)
     os.system("rm "+ out_file)
-    setId = set()
+
 
     with open(l2_out, 'r') as f:
         contents=f.read()
@@ -20,14 +21,14 @@ for k in range(1,6):
         #splitted=lines[0].split(" ")
         tempStr="sed '%sq;d' %s >> %s"% ("1",fold,out_file)
         os.system(tempStr)
-        for i in range(1, 1000):
-
+        setId = set()
+        for i in range(1,len(lines)-1):
 
             l2neigbor=lines[i].split(" ")
             if (l2neigbor[58] in setId):
                 continue
             temp=0
-            while(temp< 3):
+            while(temp< 10):
                 if (l2neigbor[58] in setId):
                     #print("ja adicionado o ",l2neigbor[58])
                     l2neigbor=lines[int(l2neigbor[58])].split(" ")
@@ -61,5 +62,5 @@ for k in range(1,6):
     #         #      break;
     #     else:
     #
-    str="sort -n -t: -k2  %s > %s" % (out_file, "/tmp/training_file_sort"+str(i)+".txt")
-    os.system(str)
+    strSort="sort -n -t: -k2  %s > %s" % (out_file, "/tmp/training_file_sort"+str(x)+".txt")
+    os.system(strSort)
