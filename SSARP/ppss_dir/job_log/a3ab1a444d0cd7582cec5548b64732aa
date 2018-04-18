@@ -1,0 +1,10 @@
+===== PPSS Item Log File =====
+Host:		guilherme-ThinkCentre-M92p
+Process:	9191
+Item:		features_train_TUBEB10.txt
+Start date:	Abr 16 11:11:04
+
+./ppss: line 2100: ../../run_alac_repeated.sh: No such file or directory
+
+Status:		FAILURE
+

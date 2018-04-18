@@ -1,0 +1,21 @@
+===== PPSS Item Log File =====
+Host:		guilherme-ThinkCentre-M92p
+Process:	1979
+Item:		features_4_train.txt
+Start date:	Abr 18 10:40:25
+
+alac_features_4_train.txt
+inserting instance 1500 into alac_features_4_train.txt
+inserting instance 515 into alac_features_4_train.txt
+inserting instance 549 into alac_features_4_train.txt
+inserting instance 1399 into alac_features_4_train.txt
+inserting instance 1391 into alac_features_4_train.txt
+inserting instance 1477 into alac_features_4_train.txt
+inserting instance 1492 into alac_features_4_train.txt
+inserting instance 1499 into alac_features_4_train.txt
+inserting instance 1450 into alac_features_4_train.txt
+instance 515 already inserted... terminating
+total of 9 instances inserted into training set
+
+Status:		SUCCESS
+

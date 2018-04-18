@@ -1,0 +1,5 @@
+@relation weka
+
+@attribute class {0,1,2}
+
+@data

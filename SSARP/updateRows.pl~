@@ -1,0 +1,19 @@
+#!/usr/bin/perl
+
+# my $infile = $ARGV[0];
+my $train_file = $ARGV[1];
+# my $featnum = $ARGV[2];
+my $outfile = $ARGV[3];
+
+my $linecount = 1;
+
+open (F1, $train_file) || die ("Could not open $file!");
+open (F3, ">$outfile") || die ("Could not open $file!");
+
+while ($line = <F1>) {
+    @vals = split(/ /, $line,2);
+    
+    $class = $vals[0]+1000;
+    $class =~ s/\n/ /;
+    print F3 "($vals[0]+1000) $vals[1]";
+}

@@ -1,0 +1,103 @@
+===== PPSS Item Log File =====
+Host:		guilherme-ThinkCentre-M92p
+Process:	11350
+Item:		features_4_train.txt
+Start date:	Abr 18 10:47:57
+
+alac_features_4_train.txt
+inserting instance 1304 into alac_features_4_train.txt
+inserting instance 1087 into alac_features_4_train.txt
+inserting instance 485 into alac_features_4_train.txt
+inserting instance 798 into alac_features_4_train.txt
+inserting instance 335 into alac_features_4_train.txt
+inserting instance 995 into alac_features_4_train.txt
+inserting instance 1276 into alac_features_4_train.txt
+inserting instance 275 into alac_features_4_train.txt
+inserting instance 1490 into alac_features_4_train.txt
+inserting instance 835 into alac_features_4_train.txt
+inserting instance 890 into alac_features_4_train.txt
+inserting instance 63 into alac_features_4_train.txt
+inserting instance 1498 into alac_features_4_train.txt
+inserting instance 415 into alac_features_4_train.txt
+inserting instance 742 into alac_features_4_train.txt
+inserting instance 492 into alac_features_4_train.txt
+inserting instance 238 into alac_features_4_train.txt
+inserting instance 1429 into alac_features_4_train.txt
+inserting instance 536 into alac_features_4_train.txt
+inserting instance 732 into alac_features_4_train.txt
+inserting instance 1449 into alac_features_4_train.txt
+inserting instance 1242 into alac_features_4_train.txt
+inserting instance 248 into alac_features_4_train.txt
+inserting instance 184 into alac_features_4_train.txt
+inserting instance 330 into alac_features_4_train.txt
+inserting instance 495 into alac_features_4_train.txt
+inserting instance 1482 into alac_features_4_train.txt
+inserting instance 859 into alac_features_4_train.txt
+inserting instance 776 into alac_features_4_train.txt
+inserting instance 1178 into alac_features_4_train.txt
+inserting instance 1289 into alac_features_4_train.txt
+inserting instance 880 into alac_features_4_train.txt
+inserting instance 68 into alac_features_4_train.txt
+inserting instance 648 into alac_features_4_train.txt
+inserting instance 721 into alac_features_4_train.txt
+inserting instance 846 into alac_features_4_train.txt
+inserting instance 586 into alac_features_4_train.txt
+inserting instance 1440 into alac_features_4_train.txt
+inserting instance 242 into alac_features_4_train.txt
+inserting instance 1450 into alac_features_4_train.txt
+inserting instance 1288 into alac_features_4_train.txt
+inserting instance 691 into alac_features_4_train.txt
+inserting instance 1017 into alac_features_4_train.txt
+inserting instance 171 into alac_features_4_train.txt
+inserting instance 307 into alac_features_4_train.txt
+inserting instance 1326 into alac_features_4_train.txt
+inserting instance 230 into alac_features_4_train.txt
+inserting instance 598 into alac_features_4_train.txt
+inserting instance 1077 into alac_features_4_train.txt
+inserting instance 361 into alac_features_4_train.txt
+inserting instance 134 into alac_features_4_train.txt
+inserting instance 752 into alac_features_4_train.txt
+inserting instance 957 into alac_features_4_train.txt
+inserting instance 89 into alac_features_4_train.txt
+inserting instance 1146 into alac_features_4_train.txt
+inserting instance 920 into alac_features_4_train.txt
+inserting instance 491 into alac_features_4_train.txt
+inserting instance 1133 into alac_features_4_train.txt
+inserting instance 82 into alac_features_4_train.txt
+inserting instance 1113 into alac_features_4_train.txt
+inserting instance 1126 into alac_features_4_train.txt
+inserting instance 1423 into alac_features_4_train.txt
+inserting instance 196 into alac_features_4_train.txt
+inserting instance 232 into alac_features_4_train.txt
+inserting instance 1499 into alac_features_4_train.txt
+inserting instance 1477 into alac_features_4_train.txt
+inserting instance 1448 into alac_features_4_train.txt
+inserting instance 631 into alac_features_4_train.txt
+inserting instance 779 into alac_features_4_train.txt
+inserting instance 1438 into alac_features_4_train.txt
+inserting instance 947 into alac_features_4_train.txt
+inserting instance 1261 into alac_features_4_train.txt
+inserting instance 506 into alac_features_4_train.txt
+inserting instance 1117 into alac_features_4_train.txt
+inserting instance 726 into alac_features_4_train.txt
+inserting instance 830 into alac_features_4_train.txt
+inserting instance 627 into alac_features_4_train.txt
+inserting instance 1388 into alac_features_4_train.txt
+inserting instance 999 into alac_features_4_train.txt
+inserting instance 450 into alac_features_4_train.txt
+inserting instance 78 into alac_features_4_train.txt
+inserting instance 931 into alac_features_4_train.txt
+inserting instance 665 into alac_features_4_train.txt
+inserting instance 784 into alac_features_4_train.txt
+inserting instance 873 into alac_features_4_train.txt
+inserting instance 266 into alac_features_4_train.txt
+inserting instance 687 into alac_features_4_train.txt
+inserting instance 55 into alac_features_4_train.txt
+inserting instance 585 into alac_features_4_train.txt
+inserting instance 1189 into alac_features_4_train.txt
+inserting instance 1228 into alac_features_4_train.txt
+instance 1117 already inserted... terminating
+total of 91 instances inserted into training set
+
+Status:		SUCCESS
+

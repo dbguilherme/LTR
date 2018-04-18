@@ -1,0 +1,988 @@
+label len  300
+rotulo len  300
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold1/test.txt /tmp/out3 out 0
+map  0.095730704388869
+
+ndcg  0.138183956802641
+label len  300
+rotulo len  300
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold2/test.txt /tmp/out3 out 0
+map  0.14595423217838
+
+ndcg  0.2564456927621
+label len  300
+rotulo len  300
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold3/test.txt /tmp/out3 out 0
+map  0.221514751129048
+
+ndcg  0.333603782214657
+label len  300
+rotulo len  300
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold4/test.txt /tmp/out3 out 0
+map  0.125418614682873
+
+ndcg  0.161666320581268
+label len  300
+rotulo len  300
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold5/test.txt /tmp/out3 out 0
+map  0.101153442837193
+
+ndcg  0.172473388654677
+set()
+final ndcg 0.2124746282030686
+final map 0.13795434904327258
+label len  900
+rotulo len  900
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold1/test.txt /tmp/out3 out 0
+map  0.0870159883252564
+
+ndcg  0.122910833215325
+label len  900
+rotulo len  900
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold2/test.txt /tmp/out3 out 0
+map  0.179976018788353
+
+ndcg  0.242363508850394
+label len  900
+rotulo len  900
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold3/test.txt /tmp/out3 out 0
+map  0.319381590469841
+
+ndcg  0.4221291185913
+label len  900
+rotulo len  900
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold4/test.txt /tmp/out3 out 0
+map  0.186796451392598
+
+ndcg  0.225638769499702
+label len  900
+rotulo len  900
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold5/test.txt /tmp/out3 out 0
+map  0.138364356056606
+
+ndcg  0.236676034552567
+set()
+final ndcg 0.24994365294185758
+final map 0.18230688100653086
+label len  1500
+rotulo len  1500
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold1/test.txt /tmp/out3 out 0
+map  0.129724650885285
+
+ndcg  0.196733311952467
+label len  1500
+rotulo len  1500
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold2/test.txt /tmp/out3 out 0
+map  0.25902483589689
+
+ndcg  0.336079860838962
+label len  1500
+rotulo len  1500
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold3/test.txt /tmp/out3 out 0
+map  0.257587343399858
+
+ndcg  0.373162608758805
+label len  1500
+rotulo len  1500
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold4/test.txt /tmp/out3 out 0
+map  0.194319875445917
+
+ndcg  0.251803589393914
+label len  1500
+rotulo len  1500
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold5/test.txt /tmp/out3 out 0
+map  0.161893319022071
+
+ndcg  0.225146792577437
+set()
+final ndcg 0.276585232704317
+final map 0.2005100049300042
+label len  2100
+rotulo len  2100
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold1/test.txt /tmp/out3 out 0
+map  0.16639195537022
+
+ndcg  0.205565318962086
+label len  2100
+rotulo len  2100
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold2/test.txt /tmp/out3 out 0
+map  0.370861191883678
+
+ndcg  0.476034910526252
+label len  2100
+rotulo len  2100
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold3/test.txt /tmp/out3 out 0
+map  0.377016717272174
+
+ndcg  0.429328721010281
+label len  2100
+rotulo len  2100
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold4/test.txt /tmp/out3 out 0
+map  0.275550512498496
+
+ndcg  0.339088990429996
+label len  2100
+rotulo len  2100
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold5/test.txt /tmp/out3 out 0
+map  0.193778692095336
+
+ndcg  0.304496773917249
+set()
+final ndcg 0.35090294296917285
+final map 0.27671981382398075
+label len  2700
+rotulo len  2700
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold1/test.txt /tmp/out3 out 0
+map  0.152844412622131
+
+ndcg  0.190055521049886
+label len  2700
+rotulo len  2700
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold2/test.txt /tmp/out3 out 0
+map  0.283824530080747
+
+ndcg  0.358183686315339
+label len  2700
+rotulo len  2700
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold3/test.txt /tmp/out3 out 0
+map  0.387585188217957
+
+ndcg  0.479049371096645
+label len  2700
+rotulo len  2700
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold4/test.txt /tmp/out3 out 0
+map  0.256245395310629
+
+ndcg  0.345963588585135
+label len  2700
+rotulo len  2700
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold5/test.txt /tmp/out3 out 0
+map  0.163038966798276
+
+ndcg  0.253977008141881
+set()
+final ndcg 0.32544583503777724
+final map 0.24870769860594805
+label len  3300
+rotulo len  3300
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold1/test.txt /tmp/out3 out 0
+map  0.186596389551349
+
+ndcg  0.226111516336089
+label len  3300
+rotulo len  3300
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold2/test.txt /tmp/out3 out 0
+map  0.283182058316284
+
+ndcg  0.353960993225354
+label len  3300
+rotulo len  3300
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold3/test.txt /tmp/out3 out 0
+map  0.40247392150943
+
+ndcg  0.461533202200244
+label len  3300
+rotulo len  3300
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold4/test.txt /tmp/out3 out 0
+map  0.256583625491152
+
+ndcg  0.334017905235781
+label len  3300
+rotulo len  3300
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold5/test.txt /tmp/out3 out 0
+map  0.205817876385986
+
+ndcg  0.286519949957636
+set()
+final ndcg 0.3324287133910208
+final map 0.26693077425084016
+label len  3900
+rotulo len  3900
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold1/test.txt /tmp/out3 out 0
+map  0.192047517351871
+
+ndcg  0.245819830981964
+label len  3900
+rotulo len  3900
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold2/test.txt /tmp/out3 out 0
+map  0.311384058142519
+
+ndcg  0.396714128536757
+label len  3900
+rotulo len  3900
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold3/test.txt /tmp/out3 out 0
+map  0.367834294850616
+
+ndcg  0.429774466979075
+label len  3900
+rotulo len  3900
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold4/test.txt /tmp/out3 out 0
+map  0.236657532338907
+
+ndcg  0.29368981716909
+label len  3900
+rotulo len  3900
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold5/test.txt /tmp/out3 out 0
+map  0.168366005143168
+
+ndcg  0.273672437718821
+set()
+final ndcg 0.3279341362771414
+final map 0.2552578815654162
+label len  4500
+rotulo len  4500
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold1/test.txt /tmp/out3 out 0
+map  0.176382188635411
+
+ndcg  0.24733170947411
+label len  4500
+rotulo len  4500
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold2/test.txt /tmp/out3 out 0
+map  0.306413867229698
+
+ndcg  0.404925286690961
+label len  4500
+rotulo len  4500
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold3/test.txt /tmp/out3 out 0
+map  0.27484096908632
+
+ndcg  0.370280517424637
+label len  4500
+rotulo len  4500
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold4/test.txt /tmp/out3 out 0
+map  0.252175844500117
+
+ndcg  0.32248833673322
+label len  4500
+rotulo len  4500
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold5/test.txt /tmp/out3 out 0
+map  0.21276931481885
+
+ndcg  0.309355431855542
+set()
+final ndcg 0.33087625643569407
+final map 0.24451643685407923
+label len  5100
+rotulo len  5100
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold1/test.txt /tmp/out3 out 0
+map  0.185875564992424
+
+ndcg  0.245570232549313
+label len  5100
+rotulo len  5100
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold2/test.txt /tmp/out3 out 0
+map  0.319801770308678
+
+ndcg  0.411554338446439
+label len  5100
+rotulo len  5100
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold3/test.txt /tmp/out3 out 0
+map  0.370518305605644
+
+ndcg  0.432552997837114
+label len  5100
+rotulo len  5100
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold4/test.txt /tmp/out3 out 0
+map  0.252458633365891
+
+ndcg  0.371131812195996
+label len  5100
+rotulo len  5100
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold5/test.txt /tmp/out3 out 0
+map  0.161771912901351
+
+ndcg  0.235655561026284
+set()
+final ndcg 0.33929298841102923
+final map 0.2580852374347976
+label len  5700
+rotulo len  5700
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold1/test.txt /tmp/out3 out 0
+map  0.177906628453043
+
+ndcg  0.252915503533888
+label len  5700
+rotulo len  5700
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold2/test.txt /tmp/out3 out 0
+map  0.299572869243465
+
+ndcg  0.397216648048534
+label len  5700
+rotulo len  5700
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold3/test.txt /tmp/out3 out 0
+map  0.35459886158753
+
+ndcg  0.411359451523371
+label len  5700
+rotulo len  5700
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold4/test.txt /tmp/out3 out 0
+map  0.296754486516451
+
+ndcg  0.409414186756678
+label len  5700
+rotulo len  5700
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold5/test.txt /tmp/out3 out 0
+map  0.190636823694162
+
+ndcg  0.307702807963748
+set()
+final ndcg 0.35572171956524384
+final map 0.2638939338989302
+label len  6300
+rotulo len  6300
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold1/test.txt /tmp/out3 out 0
+map  0.190753513506744
+
+ndcg  0.256578724570263
+label len  6300
+rotulo len  6300
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold2/test.txt /tmp/out3 out 0
+map  0.345905292116669
+
+ndcg  0.433981176730863
+label len  6300
+rotulo len  6300
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold3/test.txt /tmp/out3 out 0
+map  0.369562200319754
+
+ndcg  0.429786909089844
+label len  6300
+rotulo len  6300
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold4/test.txt /tmp/out3 out 0
+map  0.232224673080883
+
+ndcg  0.323812146600969
+label len  6300
+rotulo len  6300
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold5/test.txt /tmp/out3 out 0
+map  0.208996829255523
+
+ndcg  0.299021168880497
+set()
+final ndcg 0.34863602517448716
+final map 0.26948850165591465
+label len  6900
+rotulo len  6900
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold1/test.txt /tmp/out3 out 0
+map  0.185220540339205
+
+ndcg  0.244162193155406
+label len  6900
+rotulo len  6900
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold2/test.txt /tmp/out3 out 0
+map  0.324522857398165
+
+ndcg  0.426039283849607
+label len  6900
+rotulo len  6900
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold3/test.txt /tmp/out3 out 0
+map  0.390500110648524
+
+ndcg  0.480706413832009
+label len  6900
+rotulo len  6900
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold4/test.txt /tmp/out3 out 0
+map  0.260681440190267
+
+ndcg  0.388117815006626
+label len  6900
+rotulo len  6900
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold5/test.txt /tmp/out3 out 0
+map  0.188145795206019
+
+ndcg  0.301460496967197
+set()
+final ndcg 0.368097240562169
+final map 0.269814148756436
+label len  7500
+rotulo len  7500
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold1/test.txt /tmp/out3 out 0
+map  0.18037784756696
+
+ndcg  0.249830267290704
+label len  7500
+rotulo len  7500
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold2/test.txt /tmp/out3 out 0
+map  0.358287020492589
+
+ndcg  0.432814034894331
+label len  7500
+rotulo len  7500
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold3/test.txt /tmp/out3 out 0
+map  0.356325532888976
+
+ndcg  0.414391043258061
+label len  7500
+rotulo len  7500
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold4/test.txt /tmp/out3 out 0
+map  0.296875777447838
+
+ndcg  0.437933100737764
+label len  7500
+rotulo len  7500
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold5/test.txt /tmp/out3 out 0
+map  0.213607132463816
+
+ndcg  0.31786801582199
+set()
+final ndcg 0.37056729240056996
+final map 0.2810946621720358
+label len  8100
+rotulo len  8100
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold1/test.txt /tmp/out3 out 0
+map  0.190168860971765
+
+ndcg  0.262387151391582
+label len  8100
+rotulo len  8100
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold2/test.txt /tmp/out3 out 0
+map  0.349597333864821
+
+ndcg  0.432441465434937
+label len  8100
+rotulo len  8100
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold3/test.txt /tmp/out3 out 0
+map  0.359434602173773
+
+ndcg  0.412129701313747
+label len  8100
+rotulo len  8100
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold4/test.txt /tmp/out3 out 0
+map  0.262865516747472
+
+ndcg  0.398432291138203
+label len  8100
+rotulo len  8100
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold5/test.txt /tmp/out3 out 0
+map  0.193962315583805
+
+ndcg  0.322338226674036
+set()
+final ndcg 0.365545767190501
+final map 0.2712057258683272
+label len  8700
+rotulo len  8700
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold1/test.txt /tmp/out3 out 0
+map  0.201410658099686
+
+ndcg  0.260428805975362
+label len  8700
+rotulo len  8700
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold2/test.txt /tmp/out3 out 0
+map  0.344258072617521
+
+ndcg  0.443723909082029
+label len  8700
+rotulo len  8700
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold3/test.txt /tmp/out3 out 0
+map  0.368110895590595
+
+ndcg  0.422102879637606
+label len  8700
+rotulo len  8700
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold4/test.txt /tmp/out3 out 0
+map  0.309218010617157
+
+ndcg  0.392967513611889
+label len  8700
+rotulo len  8700
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold5/test.txt /tmp/out3 out 0
+map  0.18615629563318
+
+ndcg  0.310197078299915
+set()
+final ndcg 0.3658840373213602
+final map 0.28183078651162774
+label len  9300
+rotulo len  9300
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold1/test.txt /tmp/out3 out 0
+map  0.18215463073992
+
+ndcg  0.246667045804208
+label len  9300
+rotulo len  9300
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold2/test.txt /tmp/out3 out 0
+map  0.376611520199013
+
+ndcg  0.466816436021637
+label len  9300
+rotulo len  9300
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold3/test.txt /tmp/out3 out 0
+map  0.388053591384539
+
+ndcg  0.425569051733936
+label len  9300
+rotulo len  9300
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold4/test.txt /tmp/out3 out 0
+map  0.27871862336166
+
+ndcg  0.388758712465075
+label len  9300
+rotulo len  9300
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold5/test.txt /tmp/out3 out 0
+map  0.181064546640231
+
+ndcg  0.282910906682888
+set()
+final ndcg 0.3621444305415489
+final map 0.2813205824650726
+label len  9900
+rotulo len  9900
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold1/test.txt /tmp/out3 out 0
+map  0.194403390065199
+
+ndcg  0.259253711848892
+label len  9900
+rotulo len  9900
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold2/test.txt /tmp/out3 out 0
+map  0.356132528132501
+
+ndcg  0.477597662620237
+label len  9900
+rotulo len  9900
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold3/test.txt /tmp/out3 out 0
+map  0.363954575897132
+
+ndcg  0.426358790430184
+label len  9900
+rotulo len  9900
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold4/test.txt /tmp/out3 out 0
+map  0.310339336789425
+
+ndcg  0.413149037585612
+label len  9900
+rotulo len  9900
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold5/test.txt /tmp/out3 out 0
+map  0.215098966516271
+
+ndcg  0.3371359842256
+set()
+final ndcg 0.382699037342105
+final map 0.2879857594801056
+label len  10500
+rotulo len  10500
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold1/test.txt /tmp/out3 out 0
+map  0.191194638134595
+
+ndcg  0.252841459430788
+label len  10500
+rotulo len  10500
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold2/test.txt /tmp/out3 out 0
+map  0.338388589126161
+
+ndcg  0.431465520372213
+label len  10500
+rotulo len  10500
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold3/test.txt /tmp/out3 out 0
+map  0.346420482327169
+
+ndcg  0.398107085905248
+label len  10500
+rotulo len  10500
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold4/test.txt /tmp/out3 out 0
+map  0.321510682652324
+
+ndcg  0.412526863919175
+label len  10500
+rotulo len  10500
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold5/test.txt /tmp/out3 out 0
+map  0.215103068098754
+
+ndcg  0.319588960900335
+set()
+final ndcg 0.3629059781055518
+final map 0.2825234920678006
+label len  11100
+rotulo len  11100
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold1/test.txt /tmp/out3 out 0
+map  0.19370522320117
+
+ndcg  0.242015081640639
+label len  11100
+rotulo len  11100
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold2/test.txt /tmp/out3 out 0
+map  0.343956348629862
+
+ndcg  0.450473070867647
+label len  11100
+rotulo len  11100
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold3/test.txt /tmp/out3 out 0
+map  0.3799066123202
+
+ndcg  0.429062537546924
+label len  11100
+rotulo len  11100
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold4/test.txt /tmp/out3 out 0
+map  0.293624394434486
+
+ndcg  0.384991319342682
+label len  11100
+rotulo len  11100
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold5/test.txt /tmp/out3 out 0
+map  0.197233407159162
+
+ndcg  0.329163178234587
+set()
+final ndcg 0.36714103752649574
+final map 0.281685197148976
+label len  11700
+rotulo len  11700
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold1/test.txt /tmp/out3 out 0
+map  0.19241200496623
+
+ndcg  0.254550358876357
+label len  11700
+rotulo len  11700
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold2/test.txt /tmp/out3 out 0
+map  0.366552296662968
+
+ndcg  0.460404718054213
+label len  11700
+rotulo len  11700
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold3/test.txt /tmp/out3 out 0
+map  0.38110323231562
+
+ndcg  0.416001468712647
+label len  11700
+rotulo len  11700
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold4/test.txt /tmp/out3 out 0
+map  0.301131835912698
+
+ndcg  0.394893677769194
+label len  11700
+rotulo len  11700
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold5/test.txt /tmp/out3 out 0
+map  0.221391503289865
+
+ndcg  0.303389461824369
+set()
+final ndcg 0.365847937047356
+final map 0.2925181746294762
+label len  12300
+rotulo len  12300
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold1/test.txt /tmp/out3 out 0
+map  0.188225804549906
+
+ndcg  0.246949207450921
+label len  12300
+rotulo len  12300
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold2/test.txt /tmp/out3 out 0
+map  0.339862548193648
+
+ndcg  0.436281541230275
+label len  12300
+rotulo len  12300
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold3/test.txt /tmp/out3 out 0
+map  0.353869366341144
+
+ndcg  0.411311492207237
+label len  12300
+rotulo len  12300
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold4/test.txt /tmp/out3 out 0
+map  0.31788397325152
+
+ndcg  0.442271996872874
+label len  12300
+rotulo len  12300
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold5/test.txt /tmp/out3 out 0
+map  0.217794755624336
+
+ndcg  0.321722948109189
+set()
+final ndcg 0.37170743717409926
+final map 0.2835272895921108
+label len  12900
+rotulo len  12900
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold1/test.txt /tmp/out3 out 0
+map  0.198473267652801
+
+ndcg  0.274234866083164
+label len  12900
+rotulo len  12900
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold2/test.txt /tmp/out3 out 0
+map  0.342022354268936
+
+ndcg  0.447176080947688
+label len  12900
+rotulo len  12900
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold3/test.txt /tmp/out3 out 0
+map  0.35527840959682
+
+ndcg  0.402949084818292
+label len  12900
+rotulo len  12900
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold4/test.txt /tmp/out3 out 0
+map  0.300556556170776
+
+ndcg  0.390638167889796
+label len  12900
+rotulo len  12900
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold5/test.txt /tmp/out3 out 0
+map  0.17957171977941
+
+ndcg  0.29283328427788
+set()
+final ndcg 0.361566296803364
+final map 0.2751804614937486
+label len  13500
+rotulo len  13500
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold1/test.txt /tmp/out3 out 0
+map  0.197872270446925
+
+ndcg  0.260293489073581
+label len  13500
+rotulo len  13500
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold2/test.txt /tmp/out3 out 0
+map  0.349594496733354
+
+ndcg  0.453273713918321
+label len  13500
+rotulo len  13500
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold3/test.txt /tmp/out3 out 0
+map  0.347448831559033
+
+ndcg  0.399688292744035
+label len  13500
+rotulo len  13500
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold4/test.txt /tmp/out3 out 0
+map  0.295284526334385
+
+ndcg  0.388576168535123
+label len  13500
+rotulo len  13500
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold5/test.txt /tmp/out3 out 0
+map  0.182409438352453
+
+ndcg  0.32613667203758
+set()
+final ndcg 0.36559366726172804
+final map 0.27452191268523
+label len  14100
+rotulo len  14100
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold1/test.txt /tmp/out3 out 0
+map  0.178572042387924
+
+ndcg  0.212737692717416
+label len  14100
+rotulo len  14100
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold2/test.txt /tmp/out3 out 0
+map  0.343676290458843
+
+ndcg  0.444595514745306
+label len  14100
+rotulo len  14100
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold3/test.txt /tmp/out3 out 0
+map  0.359063068717805
+
+ndcg  0.411290007891372
+label len  14100
+rotulo len  14100
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold4/test.txt /tmp/out3 out 0
+map  0.31736206762424
+
+ndcg  0.402423074654653
+label len  14100
+rotulo len  14100
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold5/test.txt /tmp/out3 out 0
+map  0.182910860962966
+
+ndcg  0.275904821312883
+set()
+final ndcg 0.34939022226432603
+final map 0.2763168660303556
+label len  14700
+rotulo len  14700
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold1/test.txt /tmp/out3 out 0
+map  0.187756726353938
+
+ndcg  0.245021599293354
+label len  14700
+rotulo len  14700
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold2/test.txt /tmp/out3 out 0
+map  0.322443902378056
+
+ndcg  0.415058721519099
+label len  14700
+rotulo len  14700
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold3/test.txt /tmp/out3 out 0
+map  0.351125082415349
+
+ndcg  0.408811828068048
+label len  14700
+rotulo len  14700
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold4/test.txt /tmp/out3 out 0
+map  0.308703566740235
+
+ndcg  0.393401673880426
+label len  14700
+rotulo len  14700
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold5/test.txt /tmp/out3 out 0
+map  0.199296870603879
+
+ndcg  0.336037517389293
+set()
+final ndcg 0.35966626803004403
+final map 0.2738652296982914
+label len  15300
+rotulo len  15300
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold1/test.txt /tmp/out3 out 0
+map  0.175270354629233
+
+ndcg  0.229781817343069
+label len  15300
+rotulo len  15300
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold2/test.txt /tmp/out3 out 0
+map  0.35800865600035
+
+ndcg  0.472204485828133
+label len  15300
+rotulo len  15300
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold3/test.txt /tmp/out3 out 0
+map  0.35035395626898
+
+ndcg  0.404930260621942
+label len  15300
+rotulo len  15300
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold4/test.txt /tmp/out3 out 0
+map  0.30845501890457
+
+ndcg  0.389148082979797
+label len  15300
+rotulo len  15300
+saida...
+perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold5/test.txt /tmp/out3 out 0
+map  0.193310401460585
+
+ndcg  0.301435435359631
+set()
+final ndcg 0.3595000164265144
+final map 0.27707967745274364

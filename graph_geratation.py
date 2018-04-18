@@ -18,6 +18,8 @@ for i in range(1000):
     g.add_edge(g.vertex_index[random.randint(50,90)], g.vertex_index[random.randint(50,90)])
 
 
+
+
 # v_prop = g.new_vertex_property("string")
 # v_prop[g.vertex_index[0]] = 'fooxxx'
 # v_prop[g.vertex_index[1]] = 'bar'
@@ -36,3 +38,7 @@ pr = gt.pagerank(g)
 # for i in pr:
 #     print (i)
 graph_draw(g,  vertex_fill_color=pr, vertex_font_size=2,vorder=pr, output_size=(800, 800), output="two-nodes.png")
+
+
+vp, ep = gt.betweenness(g)
+print(gt.central_point_dominance(g, vp))
