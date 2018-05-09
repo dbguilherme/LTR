@@ -1,0 +1,26 @@
+Mai 09 16:03:43: DSPLY 
+Mai 09 16:03:43: DSPLY =========================================================
+Mai 09 16:03:43: DSPLY                        |P|P|S|S|                         
+Mai 09 16:03:43: DSPLY Distributed Parallel Processing Shell Script vers. 2.83
+Mai 09 16:03:43: DSPLY =========================================================
+Mai 09 16:03:43: DSPLY Hostname:		guilherme-OptiPlex-7010
+Mai 09 16:03:43: DSPLY ---------------------------------------------------------
+Mai 09 16:03:43: DSPLY CPU: Intel(R) Core(TM) i7-3770 CPU @ 3.40GHz
+Mai 09 16:03:43: DSPLY Starting 5 parallel workers.
+Mai 09 16:03:43: DSPLY ---------------------------------------------------------
+Mai 09 16:03:43: INFO  Current active workers is 5
+Mai 09 16:03:43: INFO  Now processing features_1_train.txt
+Mai 09 16:03:43: INFO  Current active workers is 5
+Mai 09 16:03:43: INFO  Now processing features_2_train.txt
+Mai 09 16:03:43: INFO  Current active workers is 5
+Mai 09 16:03:43: INFO  Now processing features_3_train.txt
+Mai 09 16:03:43: INFO  Current active workers is 5
+Mai 09 16:03:43: INFO  Now processing features_4_train.txt
+Mai 09 16:03:43: INFO  Current active workers is 5
+Mai 09 16:03:43: INFO  Now processing features_5_train.txt
+Mai 09 16:03:43: INFO  Current active workers is 5
+Mai 09 16:03:43: INFO  Current active workers is 4
+Mai 09 16:03:43: INFO  Current active workers is 3
+Mai 09 16:03:43: INFO  Current active workers is 2
+Mai 09 16:03:44: INFO  Current active workers is 1
+Mai 09 16:03:44: DSPLY Finished. Consult ppss_dir/job_log for job output.

@@ -1,14 +1,14 @@
 ===== PPSS Item Log File =====
-Host:		guilherme-ThinkCentre-M92p
-Process:	23655
+Host:		guilherme-OptiPlex-7010
+Process:	31816
 Item:		features_4_train.txt
-Start date:	Mai 09 13:54:04
+Start date:	Mai 09 16:03:43
 
 alac_features_4_train.txt
-                               arquivo não vazio 27197  1000 1000 0
-inserting instance 248824 into alac_features_4_train.txt
-                               arquivo não vazio 27197  1001 1000 1
-instance 248824 already inserted... terminating
+                               arquivo não vazio 50  1044 1044 0
+inserting instance 310028 into alac_features_4_train.txt
+                               arquivo não vazio 50  1045 1044 1
+instance 310028 already inserted... terminating
 total of 1 instances inserted into training set
 
 Status:		SUCCESS

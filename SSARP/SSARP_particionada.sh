@@ -9,6 +9,8 @@ binsto=10 # numero de bins (ate)
 
 # roda do Fold1 ao Fold5
 i=$3;
+
+main_file_letor=$4
 while [ $i -le 1 ]; do
 	#.././cover.pl ../../Gov/QueryLevelNorm/2003_td_dataset/Fold$i/train.txt  ../../Gov/QueryLevelNorm/2003_td_dataset/Fold$i/out_emst.csv 3000 > /tmp/lixo
 	#./produce_dosc_query.sh $i
@@ -27,28 +29,22 @@ while [ $i -le 1 ]; do
 	
 	
 	rm "/tmp/newTrain"
-	while  [ $j -le 223 ]; do
+	while  [ $j -le 400 ]; do
+	
 				train="/tmp/input/$j"
 				temp=`wc -l < $train`
 				if [ $j -eq 0 ]; then
 					rm  "/tmp/SecondRoundSelection.txt$i"
-					cat "../../selectedset.txt" >>  "/tmp/SecondRoundSelection.txt$i"
+					cat "../../../selectedset.txt" >>  "/tmp/SecondRoundSelection.txt$i"
 					
 					echo "copiou o treino para o teste "
 					
-					
-					
-					
-					
-					
 				fi
-
-
 
 				if [ $temp -eq 0 ]; then
 					 j=$(($j+1))
 					 continue
-				 fi
+                                fi
 				echo "*******tamanho do treinamento  $temp do arquivo $j"
                                 echo "arquivo /tmp/SecondRoundSelection.txt$i --->`wc -l < /tmp/SecondRoundSelection.txt$i`"
 				#cp $train "/tmp/newTrain"
@@ -61,7 +57,7 @@ while [ $i -le 1 ]; do
 					rm ../train.txt.arff$i
 					rm ../train.txt.arff
 					if [ ! -f  ../train.txt.arff ]; then
-                                            ../../convert_letor_to_weka ../train.txt $numfeatures > ../train.txt.arff
+                                            ../../convert_letor_to_weka $main_file_letor $numfeatures > ../train.txt.arff
                                         
                                            
                                         echo "Gerando os bins TUBE..."
