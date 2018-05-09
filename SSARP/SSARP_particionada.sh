@@ -27,7 +27,7 @@ while [ $i -le 1 ]; do
 	
 	
 	rm "/tmp/newTrain"
-	while  [ $j -le 1000 ]; do
+	while  [ $j -le 223 ]; do
 				train="/tmp/input/$j"
 				temp=`wc -l < $train`
 				if [ $j -eq 0 ]; then
@@ -51,8 +51,8 @@ while [ $i -le 1 ]; do
 				 fi
 				echo "*******tamanho do treinamento  $temp do arquivo $j"
                                 echo "arquivo /tmp/SecondRoundSelection.txt$i --->`wc -l < /tmp/SecondRoundSelection.txt$i`"
-				cp $train "/tmp/newTrain"
-				train="/tmp/newTrain"
+				#cp $train "/tmp/newTrain"
+				#train="/tmp/newTrain"
 				#cat /tmp/SecondRoundSelection.txt$i >> $train
 				if [ -f $train ]; then
 
@@ -154,7 +154,7 @@ while [ $i -le 1 ]; do
 # 				cp ../lac_train_TUBE$suffix.txt lac_train_TUBE$suffix.txt
 				#rm alac_lac_train_TUBE$suffix.txt
 				#rm alac_train_TUBE$suffix.txt
-				# rm composite_train$suffix.txt
+				
 				#../../run_alac_repeated.sh lac_train_TUBE$suffix.txt 1
 
 # 				echo  ./updateRows.pl lac_train_TUBE$suffix.txt lac_train_TUBEfinal.txt $numfeatures
@@ -172,15 +172,18 @@ while [ $i -le 1 ]; do
 # 					l=$(($l+1))
 # 				done
 # 
-
+                        rm composite_train$suffix.txt
                         cat alac_features_*_train.txt > alac_with_dup
-                        sort alac_with_dup | uniq > composite_train_uniq$suffix.txt
-                        cat composite_train_uniq$suffix.txt | awk '{ print $1 }' | while read instance; do grep "^$instance\ " lac_train_TUBE$suffix.txt >> composite_train$suffix.txt; done
+                        echo "../.././scriptRemoveRows.pl  alac_lac_train_TUBE$suffix.txt* composite_train_uniq$suffix.txt  $j" 
+                        ../.././scriptRemoveRows.pl  alac_with_dup alac_with_dup_rows_clean  $j
+                        echo "`wc alac_with_dup_rows_clean | awk '{ print $1 }'` instancias nao distintas selecionadas"
                         
-                        echo "../.././scriptRemoveRows.pl  alac_lac_train_TUBE$suffix.txt* composite_train_uniq$suffix.txt  $j"
-                        ../.././scriptRemoveRows.pl  composite_train$suffix.txt rows_selected.txt  $j
- 			
-
+                        cat alac_with_dup_rows_clean | awk '{ print $1 }' | while read instance; do grep "^$instance\ " ../lac_train_TUBE$suffix.txt >> composite_train$suffix.txt; done
+                        sort composite_train$suffix.txt | uniq > composite_train_uniq$suffix.txt
+                       
+                       
+ 			echo "`wc composite_train_uniq$suffix.txt | awk '{ print $1 }'` instancias distintas selecionadas"
+                        
 # junta as instancias selecionadas em cada particao em um arquivo unico contendo todas as features
 # 			echo "Gerando o treino a partir das instancias selecionadas em cada particao.."
  			
@@ -191,8 +194,8 @@ while [ $i -le 1 ]; do
  			
  			
  			
- 			echo "`wc rows_selected.txt | awk '{ print $1 }'` instancias distintas selecionadas"
-                        cat rows_selected.txt | awk '{ print $1 }'  | while read instance; do  sed  -n  "$instance"p  $train; done >> /tmp/SecondRoundSelection.txt$i;
+ 			#echo "`wc rows_selected.txt | awk '{ print $1 }'` instancias distintas selecionadas"
+                        cat composite_train_uniq$suffix.txt | awk '{ print $1 }'  | while read instance; do  sed  -n  "$instance"p  $train; done >> /tmp/SecondRoundSelection.txt$i;
 
 
  				
@@ -214,7 +217,7 @@ while [ $i -le 1 ]; do
 # 				sort composite_train$suffix.txt | uniq > composite_train_uniq$suffix.txt
 # 				echo "`wc composite_train_uniq$suffix.txt | awk '{ print $1 }'` instancias distintas selecionadas"
 				#
-				cat composite_train_uniqB$suffix.txt | awk '{ print $1 }'  | while read instance; do  sed  -n  "$instance"p  $train; done >> /tmp/SecondRoundSelection.txt$i;
+				#cat composite_train_uniqB$suffix.txt | awk '{ print $1 }'  | while read instance; do  sed  -n  "$instance"p  $train; done >> /tmp/SecondRoundSelection.txt$i;
 				#rm composite_train_uniq$suffix.txt
 				# roda o LAC para rankear usando o treino ativo criado acima para ordenar o teste
 				# 			echo "Executando o LAC para ordenar o teste usando o treino ativo..."

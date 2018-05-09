@@ -9,12 +9,12 @@ my $linecount = 1;
 
 open (F1, $train_file) || die ("Could not open $train_file!");
 open (F3, ">$outfile") || die ("Could not open $outfile!");
-
+print "update rows with $vez";
 while ($line = <F1>) {
     @vals = split(/ /, $line,2);
     $j=$vals[0]+1000*$vez;
     $class = $vals[0]+1000;
     $class =~ s/\n/ /;
     print F3 "$j $vals[1]";
-    #print "$j $vals[1]";
+    
 }

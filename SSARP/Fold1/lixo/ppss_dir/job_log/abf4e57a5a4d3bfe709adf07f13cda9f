@@ -1,27 +1,15 @@
 ===== PPSS Item Log File =====
 Host:		guilherme-ThinkCentre-M92p
-Process:	8114
+Process:	23655
 Item:		features_4_train.txt
-Start date:	Mai 09 12:14:22
+Start date:	Mai 09 13:54:04
 
 alac_features_4_train.txt
                                arquivo não vazio 27197  1000 1000 0
-inserting instance 247044 into alac_features_4_train.txt
+inserting instance 248824 into alac_features_4_train.txt
                                arquivo não vazio 27197  1001 1000 1
-inserting instance 243778 into alac_features_4_train.txt
-                               arquivo não vazio 27197  1002 1000 2
-inserting instance 239143 into alac_features_4_train.txt
-                               arquivo não vazio 27197  1003 1000 3
-inserting instance 247043 into alac_features_4_train.txt
-                               arquivo não vazio 27197  1004 1000 4
-inserting instance 246047 into alac_features_4_train.txt
-                               arquivo não vazio 27197  1005 1000 5
-inserting instance 247025 into alac_features_4_train.txt
-                               arquivo não vazio 27197  1006 1000 6
-inserting instance 247054 into alac_features_4_train.txt
-                               arquivo não vazio 27197  1007 1000 7
-instance 243778 already inserted... terminating
-total of 7 instances inserted into training set
+instance 248824 already inserted... terminating
+total of 1 instances inserted into training set
 
 Status:		SUCCESS
 

@@ -12,7 +12,7 @@ open (F1, $train_file) || die ("Could not open $train_file!");
 open (F2, ">$outfile") || die ("Could not open $outfile!");
 #open (F3, ">$outfile2") || die ("Could not open $outfile2!");
 
-print "removendo linhas";
+print "\n removendo linhas";
 while ($line = <F1>) {
     
     @vals = split(/ /, $line,2);
@@ -21,7 +21,7 @@ while ($line = <F1>) {
      
       
       if($vals[0]>3000){
-         print "$vez ---$j $vals[1]";
+         print "$vez ---$j $vals[0]\n";
          print F2 "$j $vals[1]";
       }
      
