@@ -1,0 +1,47 @@
+===== PPSS Item Log File =====
+Host:		guilherme-ThinkCentre-M92p
+Process:	8114
+Item:		features_1_train.txt
+Start date:	Mai 09 12:14:22
+
+alac_features_1_train.txt
+                               arquivo não vazio 27197  1000 1000 0
+inserting instance 246638 into alac_features_1_train.txt
+                               arquivo não vazio 27197  1001 1000 1
+inserting instance 248334 into alac_features_1_train.txt
+                               arquivo não vazio 27197  1002 1000 2
+inserting instance 247027 into alac_features_1_train.txt
+                               arquivo não vazio 27197  1003 1000 3
+inserting instance 246671 into alac_features_1_train.txt
+                               arquivo não vazio 27197  1004 1000 4
+inserting instance 246498 into alac_features_1_train.txt
+                               arquivo não vazio 27197  1005 1000 5
+inserting instance 246645 into alac_features_1_train.txt
+                               arquivo não vazio 27197  1006 1000 6
+inserting instance 248835 into alac_features_1_train.txt
+                               arquivo não vazio 27197  1007 1000 7
+inserting instance 249070 into alac_features_1_train.txt
+                               arquivo não vazio 27197  1008 1000 8
+inserting instance 243750 into alac_features_1_train.txt
+                               arquivo não vazio 27197  1009 1000 9
+inserting instance 248462 into alac_features_1_train.txt
+                               arquivo não vazio 27197  1010 1000 10
+inserting instance 248461 into alac_features_1_train.txt
+                               arquivo não vazio 27197  1011 1000 11
+inserting instance 246649 into alac_features_1_train.txt
+                               arquivo não vazio 27197  1012 1000 12
+inserting instance 245664 into alac_features_1_train.txt
+                               arquivo não vazio 27197  1013 1000 13
+inserting instance 247590 into alac_features_1_train.txt
+                               arquivo não vazio 27197  1014 1000 14
+inserting instance 247050 into alac_features_1_train.txt
+                               arquivo não vazio 27197  1015 1000 15
+inserting instance 247060 into alac_features_1_train.txt
+                               arquivo não vazio 27197  1016 1000 16
+inserting instance 246700 into alac_features_1_train.txt
+                               arquivo não vazio 27197  1017 1000 17
+instance 243750 already inserted... terminating
+total of 17 instances inserted into training set
+
+Status:		SUCCESS
+

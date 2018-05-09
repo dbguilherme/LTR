@@ -26,64 +26,70 @@ def subprocess_cmd(command):
 # new_row= np.array([4,5,6])
 #
 # new_array=np.vstack([input_array, new_row])
-for cluster_size in range(200, 201,20):
+n=1
+store_precision=0
+store_ndcg=0
+for cluster_size in range(n, 6,1):
     sets= set()
     valor=0
-    store_precision=0
-    store_ndcg=0
-    for i in range(1,6):
+ 
+    for i in range(2,3):
         train=np.empty((0,64), float)
         label=[]
         text_file = open('/home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold'+str(i)+'/train.txt', "r")
         fileout = open("/tmp/firstRoundSelection.txt","w")
         lines = text_file.readlines()
 
-        with open('/home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold'+str(i)+'/train.txt') as trainfile, \
-                open('/home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold'+str(i)+'/vali.txt') as valifile, \
-                open('/home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold'+str(i)+'/test.txt') as evalfile:
-            TX, Ty, Tqids, _ = pyltr.data.letor.read_dataset(trainfile)
-            VX, Vy, Vqids, _ = pyltr.data.letor.read_dataset(valifile)
-            EX, Ey, Eqids, _= pyltr.data.letor.read_dataset(evalfile)
-        generator=(pyltr.util.group.get_groups(Tqids))
+        with open('/home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold'+str(i)+'/test.txt') as evalfile:             EX, Ey, Eqids, _= pyltr.data.letor.read_dataset(evalfile)
+            
+            #open('/home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold'+str(i)+'/train.txt') as trainfile, 
+             #   open('/home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold'+str(i)+'/vali.txt') as valifile,
+                
+            #TX, Ty, Tqids, _ = pyltr.data.letor.read_dataset(trainfile)
+            #VX, Vy, Vqids, _ = pyltr.data.letor.read_dataset(valifile)
+ 
+        #generator=(pyltr.util.group.get_groups(Tqids))
         vez=0
-        for g in generator:
+        #for g in generator:
 
-            TA=TX[g[1]:g[2]]
-            TB=Ty[g[1]:g[2]]
+            #TA=TX[g[1]:g[2]]
+            #TB=Ty[g[1]:g[2]]
 
-            clustering = AgglomerativeClustering(linkage='average', affinity="euclidean", n_clusters=cluster_size)
-            clustering.fit(TA)
+            #clustering = AgglomerativeClustering(linkage='average', affinity="euclidean", n_clusters=cluster_size)
+            #clustering.fit(TA)
 
-            codebook = []
+            #codebook = []
 
-            for rangevetor in range(clustering.labels_.min(), clustering.labels_.max()+1):
-                 codebook.append(TA[clustering.labels_ == rangevetor].mean(0))
-            #print(codebook)
-            closest, _=(pairwise_distances_argmin_min(codebook, TA,metric="euclidean"))
-            train = np.append(train, np.array(TA[closest]), axis=0)
-            stringout=""
-            #print(closest)
-            for clost in (closest):
-                temp=clost+g[1]
-                fileout.write(lines[temp])
-                #print("line ",temp, "  ",g[1], " " ,g[2])
+            #for rangevetor in range(clustering.labels_.min(), clustering.labels_.max()+1):
+                 #codebook.append(TA[clustering.labels_ == rangevetor].mean(0))
+            ##print(codebook)
+            #closest, _=(pairwise_distances_argmin_min(codebook, TA,metric="euclidean"))
+            #train = np.append(train, np.array(TA[closest]), axis=0)
+            #stringout=""
+            ##print(closest)
+            #for clost in (closest):
+                #temp=clost+g[1]
+                #fileout.write(lines[temp])
+                ##print("line ",temp, "  ",g[1], " " ,g[2])
 
-            #print(str)
-            #break;
-            for c1 in closest:
-                label.append (TB.item(int(c1)))
-            vez+=1
+            ##print(str)
+            ##break;
+            #for c1 in closest:
+                #label.append (TB.item(int(c1)))
+            #vez+=1
 
-        fileout.close()
-        #call(["rm", " -r ./SSARP/Fold"+str(i)+"/temp1000"])
-        print("rodando alac com ", len(label), " instancias no fold " + str(i) )
-        try:
-            subprocess_cmd("cd SSARP ;pwd; rm -r Fold"+str(i)+"/temp; ./SSARP.sh"+ " temp 64 "+str(i)+" > /tmp/sadiaSSARP")
-        except :
-            e = sys.exc_info()[0]
-            write_to_page( "<p>Error: %s</p>" % e )
-
-        with open('/tmp/SecondRoundSelection.txt') as trainfileFinal: TX, Ty, Tqids, _ = pyltr.data.letor.read_dataset(trainfileFinal)
+        #fileout.close()
+        ##call(["rm", " -r ./SSARP/Fold"+str(i)+"/temp1000"])
+        #print("rodando alac com ", len(label), " instancias no fold " + str(i) )
+        #try:
+            #subprocess_cmd("cd SSARP ; ./SSARP.sh"+ " temp2 64 "+str(i)+" > /tmp/sadiaSSARP")
+        #except :
+            #e = sys.exc_info()[0]
+            #print( "<p>Error: %s</p>" % e )
+       # str_cover="./cover.pl ../Gov/QueryLevelNorm/2003_td_dataset/Fold"+str(i)+"/train.txt  ../Gov/QueryLevelNorm/2003_td_dataset/Fold"+str(i)+"/out_emst.csv 3000"
+       # subprocess_cmd(str_cover)
+       # with open("selectedset.txt") as trainfileFinal: TX, Ty, Tqids, _ = pyltr.data.letor.read_dataset(trainfileFinal)
+        with open("/tmp/SecondRoundSelection.txt"+str(i)) as trainfileFinal: TX, Ty, Tqids, _ = pyltr.data.letor.read_dataset(trainfileFinal)
 
         print("label len ", len(TX))
         print("rotulo len ", len(Ty), " size ", (100*len(Ty))/30000 ,"%")
@@ -117,9 +123,9 @@ for cluster_size in range(200, 201,20):
         store_precision+=float(precision[1])
         store_ndcg+=float(ndcg[10])
 
-    print (sets)
-    print("final ndcg" , store_ndcg/5)
-    print("final map" , store_precision/5)
+print (sets)
+print("final ndcg" , store_ndcg/5)
+print("final map" , store_precision/5)
    # ndcg_scorer = make_scorer(ndcg_score, needs_proba=True, k=5)
     #print(svc_param_selection(VX,Vy,5))
 

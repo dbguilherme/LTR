@@ -1,0 +1,43 @@
+===== PPSS Item Log File =====
+Host:		guilherme-ThinkCentre-M92p
+Process:	31203
+Item:		features_4_train.txt
+Start date:	Abr 18 11:46:46
+
+alac_features_4_train.txt
+inserting instance 14 into alac_features_4_train.txt
+inserting instance 51 into alac_features_4_train.txt
+inserting instance 114 into alac_features_4_train.txt
+inserting instance 96 into alac_features_4_train.txt
+inserting instance 88 into alac_features_4_train.txt
+inserting instance 128 into alac_features_4_train.txt
+inserting instance 115 into alac_features_4_train.txt
+inserting instance 58 into alac_features_4_train.txt
+inserting instance 64 into alac_features_4_train.txt
+inserting instance 120 into alac_features_4_train.txt
+inserting instance 33 into alac_features_4_train.txt
+inserting instance 8 into alac_features_4_train.txt
+inserting instance 60 into alac_features_4_train.txt
+inserting instance 138 into alac_features_4_train.txt
+inserting instance 108 into alac_features_4_train.txt
+inserting instance 112 into alac_features_4_train.txt
+inserting instance 41 into alac_features_4_train.txt
+inserting instance 44 into alac_features_4_train.txt
+inserting instance 17 into alac_features_4_train.txt
+inserting instance 47 into alac_features_4_train.txt
+inserting instance 139 into alac_features_4_train.txt
+inserting instance 148 into alac_features_4_train.txt
+inserting instance 49 into alac_features_4_train.txt
+inserting instance 30 into alac_features_4_train.txt
+inserting instance 116 into alac_features_4_train.txt
+inserting instance 54 into alac_features_4_train.txt
+inserting instance 78 into alac_features_4_train.txt
+inserting instance 74 into alac_features_4_train.txt
+inserting instance 125 into alac_features_4_train.txt
+inserting instance 95 into alac_features_4_train.txt
+inserting instance 113 into alac_features_4_train.txt
+instance 115 already inserted... terminating
+total of 31 instances inserted into training set
+
+Status:		SUCCESS
+

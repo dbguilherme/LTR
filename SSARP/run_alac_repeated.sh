@@ -13,21 +13,38 @@ echo alac_$1
 #cconfiança
 #j=MAX_JUDGEMENTS
 #d
+alac_original_size=`wc  alac_$1 | awk '{ print $1 }'`
 while [ $loop == 1 ]; do
+  teste=`wc  $1 | awk '{ print $1 }'`
+  alac_size=`wc  alac_$1 | awk '{ print $1 }'`
+  if [[ $teste -eq "0" ]]; then
+    echo "                  arquivo de entrada $1 em branco"
+    break;
+  fi
+  real_size=$((alac_size-alac_original_size));
+  if [[ $teste -le $real_size ]]; then
+    echo "arquivo vaizo $1";
+    break;
+  else
+    echo "                               arquivo não vazio $teste  $alac_size $alac_original_size $real_size";
+  fi
   ../../alac -i alac_$1 -t $1 -s 1 -m 3 -e 1000000000 -c 0.001 -j 1 -d 3 -o 1 > result_temp_$1/result_temp$count.txt
-  instance=`cat result_temp_$1/result_temp$count.txt | grep inserting | awk '{ print $3 }'`; 
+  instance=`cat result_temp_$1/result_temp$count.txt | grep inserting | awk '{ print $3 }'`;
   newclass=`cat result_temp_$1/result_temp$count.txt | grep "New CLASS" | awk '{ print $4 }'`;
-#   echo "../../alac -i alac_$1 -t $1 -s 1 -m 3 -e 1000000000 -c 0.001 -j 1 -d 3 -o 1 > result_temp_$1/result_temp$count.txt"
-  exists=`cat alac_$1 | grep "^$instance\ "`; 
-  if [ "$exists" == "" ]; then 
+  #   echo "../../alac -i alac_$1 -t $1 -s 1 -m 3 -e 1000000000 -c 0.001 -j 1 -d 3 -o 1 > result_temp_$1/result_temp$count.txt"
+  exists=`cat alac_$1 | grep "^$instance\ "`;
+  if [ "$exists" == "" ]; then
     echo inserting instance $instance into alac_$1
     if [ "$newclass" != "" ]; then
       echo class changed to $newclass;
     fi
 
-    cat $1 | grep "^$instance\ " >> alac_$1; 
+    cat $1 | grep "^$instance\ " >> alac_$1;
     count=$(($count+1));
-    
+    #if [[ $count -eq "3" ]]; then
+    #     break
+
+    #fi
   else
     echo instance $instance already inserted... terminating;
     echo total of $count instances inserted into training set;
@@ -35,5 +52,3 @@ while [ $loop == 1 ]; do
 
   fi
 done
-
-

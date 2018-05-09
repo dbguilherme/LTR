@@ -1,0 +1,5 @@
+@relation documents
+
+@attribute F24 numeric
+
+@data

@@ -4,6 +4,7 @@ use FileHandle;
 $file_lac = $ARGV[0];
 $file_features = $ARGV[1];
 $numfiles = $ARGV[2];
+$outname = $ARGV[3];
 
 if ($file_lac eq "") { $file_lac = '../lac_traintest_train.txt'; }
 if ($file_features eq "") { $file_features = '../features_traintest.txt'; }
@@ -22,11 +23,11 @@ my @filehandles;
 $line_features = <F1>;
 (@features) = split ' ', $line_features;
 
-for($i=0; $i<=39; $i++) { print "$features[$i]\n" };
+#for($i=0; $i<=39; $i++) { print "$features[$i]\n" };
 
 for ($i=1; $i<$numfiles+1; $i++) {
   $filehandles[$i] = new FileHandle;
-  $filehandles[$i]->open(">>features_$i\_train.txt");
+  $filehandles[$i]->open(">>$outname$i\_train.txt");
 }
 
 $started=0;

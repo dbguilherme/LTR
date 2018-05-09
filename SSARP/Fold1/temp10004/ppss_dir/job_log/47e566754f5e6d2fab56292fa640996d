@@ -1,0 +1,82 @@
+===== PPSS Item Log File =====
+Host:		guilherme-ThinkCentre-M92p
+Process:	28714
+Item:		features_3_train.txt
+Start date:	Abr 23 09:17:34
+
+alac_features_3_train.txt
+inserting instance 77 into alac_features_3_train.txt
+inserting instance 138 into alac_features_3_train.txt
+inserting instance 104 into alac_features_3_train.txt
+inserting instance 53 into alac_features_3_train.txt
+inserting instance 179 into alac_features_3_train.txt
+inserting instance 9 into alac_features_3_train.txt
+inserting instance 124 into alac_features_3_train.txt
+inserting instance 173 into alac_features_3_train.txt
+inserting instance 91 into alac_features_3_train.txt
+inserting instance 42 into alac_features_3_train.txt
+inserting instance 156 into alac_features_3_train.txt
+inserting instance 165 into alac_features_3_train.txt
+inserting instance 45 into alac_features_3_train.txt
+inserting instance 142 into alac_features_3_train.txt
+inserting instance 102 into alac_features_3_train.txt
+inserting instance 72 into alac_features_3_train.txt
+inserting instance 169 into alac_features_3_train.txt
+inserting instance 183 into alac_features_3_train.txt
+inserting instance 25 into alac_features_3_train.txt
+inserting instance 98 into alac_features_3_train.txt
+inserting instance 139 into alac_features_3_train.txt
+inserting instance 144 into alac_features_3_train.txt
+inserting instance 86 into alac_features_3_train.txt
+inserting instance 46 into alac_features_3_train.txt
+inserting instance 120 into alac_features_3_train.txt
+inserting instance 47 into alac_features_3_train.txt
+inserting instance 129 into alac_features_3_train.txt
+inserting instance 125 into alac_features_3_train.txt
+inserting instance 167 into alac_features_3_train.txt
+inserting instance 149 into alac_features_3_train.txt
+inserting instance 20 into alac_features_3_train.txt
+inserting instance 1 into alac_features_3_train.txt
+inserting instance 103 into alac_features_3_train.txt
+inserting instance 57 into alac_features_3_train.txt
+inserting instance 131 into alac_features_3_train.txt
+inserting instance 105 into alac_features_3_train.txt
+inserting instance 141 into alac_features_3_train.txt
+inserting instance 119 into alac_features_3_train.txt
+inserting instance 117 into alac_features_3_train.txt
+inserting instance 10 into alac_features_3_train.txt
+inserting instance 70 into alac_features_3_train.txt
+inserting instance 101 into alac_features_3_train.txt
+inserting instance 182 into alac_features_3_train.txt
+inserting instance 181 into alac_features_3_train.txt
+inserting instance 164 into alac_features_3_train.txt
+inserting instance 43 into alac_features_3_train.txt
+inserting instance 140 into alac_features_3_train.txt
+inserting instance 174 into alac_features_3_train.txt
+inserting instance 90 into alac_features_3_train.txt
+inserting instance 162 into alac_features_3_train.txt
+inserting instance 51 into alac_features_3_train.txt
+inserting instance 31 into alac_features_3_train.txt
+inserting instance 52 into alac_features_3_train.txt
+inserting instance 59 into alac_features_3_train.txt
+inserting instance 115 into alac_features_3_train.txt
+inserting instance 7 into alac_features_3_train.txt
+inserting instance 135 into alac_features_3_train.txt
+inserting instance 17 into alac_features_3_train.txt
+inserting instance 100 into alac_features_3_train.txt
+inserting instance 136 into alac_features_3_train.txt
+inserting instance 128 into alac_features_3_train.txt
+inserting instance 123 into alac_features_3_train.txt
+inserting instance 171 into alac_features_3_train.txt
+inserting instance 134 into alac_features_3_train.txt
+inserting instance 154 into alac_features_3_train.txt
+inserting instance 175 into alac_features_3_train.txt
+inserting instance 97 into alac_features_3_train.txt
+inserting instance 172 into alac_features_3_train.txt
+inserting instance 184 into alac_features_3_train.txt
+inserting instance 166 into alac_features_3_train.txt
+instance 142 already inserted... terminating
+total of 70 instances inserted into training set
+
+Status:		SUCCESS
+

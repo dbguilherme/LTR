@@ -1,0 +1,5 @@
+@relation documents
+
+@attribute F32 numeric
+
+@data
