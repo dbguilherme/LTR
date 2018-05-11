@@ -29,7 +29,7 @@ while [ $i -le 1 ]; do
 	
 	
 	rm "/tmp/newTrain"
-	while  [ $j -le 400 ]; do
+	while  [ $j -le 3000 ]; do
 	
 				train="/tmp/input/$j"
 				temp=`wc -l < $train`

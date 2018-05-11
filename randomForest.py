@@ -14,7 +14,7 @@ from sklearn.cluster import AgglomerativeClustering
 import matplotlib.pyplot as plt
 from sklearn.cluster import KMeans
 import sklearn.externals.six
-
+import pandas as pd
 
 
 def subprocess_cmd(command):
@@ -29,11 +29,13 @@ def subprocess_cmd(command):
 n=1
 store_precision=0
 store_ndcg=0
-for cluster_size in range(n, 6,1):
+ndcg_v=[]
+precis_v=[]
+for cluster_size in range(n, 2):
     sets= set()
     valor=0
  
-    for i in range(2,3):
+    for i in range(1,6):
         train=np.empty((0,64), float)
         label=[]
         text_file = open('/home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold'+str(i)+'/train.txt', "r")
@@ -41,7 +43,7 @@ for cluster_size in range(n, 6,1):
         lines = text_file.readlines()
 
         with open('/home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold'+str(i)+'/test.txt') as evalfile:             EX, Ey, Eqids, _= pyltr.data.letor.read_dataset(evalfile)
-            
+       
             #open('/home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold'+str(i)+'/train.txt') as trainfile, 
              #   open('/home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold'+str(i)+'/vali.txt') as valifile,
                 
@@ -107,12 +109,13 @@ for cluster_size in range(n, 6,1):
         for x in out:
             file_out.write(str(x)+"\n")
         file_out.close()
-        str1="perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold"+str(i)+"/test.txt /tmp/out3 out 0"
-        print(str1)
+        str1="perl Eval-Score-3.0.pl /home/guilherme/Downloads/Gov/QueryLevelNorm/2003_td_dataset/Fold"+str(i)+"/test.txt /tmp/out3 out 1"
+        print(str1) 
         subprocess.call(["sh", "-c", str1])
 
         inputfile = open('out')
         for line in inputfile:
+            #print (line)
             if "MAP" in line:
                 precision=line.split("	")
             if "NDCG" in line:
@@ -122,10 +125,21 @@ for cluster_size in range(n, 6,1):
         print("ndcg " , ndcg[10])
         store_precision+=float(precision[1])
         store_ndcg+=float(ndcg[10])
+        precis_v.append(float(precision[1]))
+        ndcg_v.append(float(ndcg[10]))
 
 print (sets)
-print("final ndcg" , store_ndcg/5)
-print("final map" , store_precision/5)
+
+
+precision_nd =  pd.Series(precis_v)
+ndcg_nd =  pd.Series(ndcg_v)
+print("final ndcg" , store_ndcg/10)
+print("final map" , store_precision/10)
+
+
+print ("media ", precision_nd.mean(), " ndgc ", ndcg_nd.mean())
+print ("desvio  ", precision_nd.std(), " ndgc ", ndcg_nd.std())
+print(ndcg_nd)
    # ndcg_scorer = make_scorer(ndcg_score, needs_proba=True, k=5)
     #print(svc_param_selection(VX,Vy,5))
 

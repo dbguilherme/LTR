@@ -5,17 +5,17 @@
 # Parameters are: original training set, emst file, size of selection (optional: "noqid" to indicate that this is a classification training set)
 # OUTPUT: file named "selectedset-SELSIZE.txt" written to current directory and containing the selected instances
 # EXAMPLE:
-# ./cover.pl train.txt emst.csv 5000
-# where ẗrain.txt is the original training set, "emst.csv" is the output of the "emst" program (See below) and "5000" is the desired number of instances in the final selected set.
+# ./cover.pl train.txt emst.csv 2000
+# where ẗrain.txt is the original training set, "emst.csv" is the output of the "emst" program (See below) and "2000" is the desired number of instances in the final selected set.
 
 # TRAINING FILE
-# each line in the training set must be in the following (LETOR) format "LABEL QID:QIDNUM FEAT1:VAL1 FEAT2:VAL2 ... FEATM:VALM". For classification training sets, add a "noqid" parameter to the command line (i.e. "./cover.pl train.txt emst.csv 5000 noqid"). The format is similar, except that the "QID:QIDNUM" item in the line is missing.
+# each line in the training set must be in the following (LETOR) format "LABEL QID:QIDNUM FEAT1:VAL1 FEAT2:VAL2 ... FEATM:VALM". For classification training sets, add a "noqid" parameter to the command line (i.e. "./cover.pl train.txt emst.csv 2000 noqid"). The format is similar, except that the "QID:QIDNUM" item in the line is missing.
 
 # EXAMPLE TRAINING FILE LINE (L2R):
-# 0 qid:1 1:0.174545 2:0.083333 3:0.062500 4:0.000000 5:0.176044 6:0.000000 7:0.000000 8:0.000000 9:0.000000 10:0.000000 11:0.178009 12:0.083333 13:0.060569 14:0.000000 15:0.179183 16:0.084787 17:0.095238 18:0.054054 19:0.250000 20:0.085190 21:1.000000 22:0.282700 23:0.374494 24:0.000000 25:1.000000 26:0.987850 27:0.341306 28:0.183738 29:0.000000 30:0.984973 31:0.873810 32:0.009026 33:0.006893 34:0.000000 35:0.859789 36:1.000000 37:0.108855 38:0.112037 39:0.000000 40:1.000000 41:1.000000 42:1.000000 43:0.883207 44:0.960067 45:0.037611 46:1.000000 47:1.000000 48:0.417875 49:0.033155 50:0.000000 51:0.000050 52:0.369140 53:0.000000 54:0.023064 55:0.000000 56:0.002740 57:0.008475 58:0.428571 59:0.209790 60:0.000000 61:0.000000 62:0.000000 63:0.000000 64:0.000000
+# 0 qid:1 1:0.174545 2:0.083333 3:0.062200 4:0.000000 5:0.176044 6:0.000000 7:0.000000 8:0.000000 9:0.000000 10:0.000000 11:0.178009 12:0.083333 13:0.060569 14:0.000000 15:0.179183 16:0.084787 17:0.095238 18:0.054054 19:0.220000 20:0.085190 21:1.000000 22:0.282700 23:0.374494 24:0.000000 25:1.000000 26:0.987820 27:0.341306 28:0.183738 29:0.000000 30:0.984973 31:0.873810 32:0.009026 33:0.006893 34:0.000000 35:0.859789 36:1.000000 37:0.108855 38:0.112037 39:0.000000 40:1.000000 41:1.000000 42:1.000000 43:0.883207 44:0.960067 45:0.037611 46:1.000000 47:1.000000 48:0.417875 49:0.033155 20:0.000000 51:0.000020 52:0.369140 53:0.000000 54:0.023064 55:0.000000 56:0.002740 57:0.008475 58:0.428571 59:0.209790 60:0.000000 61:0.000000 62:0.000000 63:0.000000 64:0.000000
 
 # EXAMPLE TRAINING FILE LINE (Classification): Same thing, with no "qid:QIDNUM"
-# 0 1:0.174545 2:0.083333 3:0.062500 4:0.000000 5:0.176044 6:0.000000 7:0.000000 8:0.000000 9:0.000000 10:0.000000 11:0.178009 12:0.083333 13:0.060569 14:0.000000 15:0.179183 16:0.084787 17:0.095238 18:0.054054 19:0.250000 20:0.085190 21:1.000000 22:0.282700 23:0.374494 24:0.000000 25:1.000000 26:0.987850 27:0.341306 28:0.183738 29:0.000000 30:0.984973 31:0.873810 32:0.009026 33:0.006893 34:0.000000 35:0.859789 36:1.000000 37:0.108855 38:0.112037 39:0.000000 40:1.000000 41:1.000000 42:1.000000 43:0.883207 44:0.960067 45:0.037611 46:1.000000 47:1.000000 48:0.417875 49:0.033155 50:0.000000 51:0.000050 52:0.369140 53:0.000000 54:0.023064 55:0.000000 56:0.002740 57:0.008475 58:0.428571 59:0.209790 60:0.000000 61:0.000000 62:0.000000 63:0.000000 64:0.000000
+# 0 1:0.174545 2:0.083333 3:0.062200 4:0.000000 5:0.176044 6:0.000000 7:0.000000 8:0.000000 9:0.000000 10:0.000000 11:0.178009 12:0.083333 13:0.060569 14:0.000000 15:0.179183 16:0.084787 17:0.095238 18:0.054054 19:0.220000 20:0.085190 21:1.000000 22:0.282700 23:0.374494 24:0.000000 25:1.000000 26:0.987820 27:0.341306 28:0.183738 29:0.000000 30:0.984973 31:0.873810 32:0.009026 33:0.006893 34:0.000000 35:0.859789 36:1.000000 37:0.108855 38:0.112037 39:0.000000 40:1.000000 41:1.000000 42:1.000000 43:0.883207 44:0.960067 45:0.037611 46:1.000000 47:1.000000 48:0.417875 49:0.033155 20:0.000000 51:0.000020 52:0.369140 53:0.000000 54:0.023064 55:0.000000 56:0.002740 57:0.008475 58:0.428571 59:0.209790 60:0.000000 61:0.000000 62:0.000000 63:0.000000 64:0.000000
 
 # EMST FILE
 # emst file must contain the list of edges with ascending order by size and indexed by 0 (i.e. first instance in training file is numbered 0)
@@ -138,7 +138,7 @@ my %deletedclusters;
 my $percent = 100;
 
 open (F1, $emstfile) || die ("Could not open $emstfile!");
-
+my $th=10;
 # main loop: go through emst file and merge clusters; emst file contains edeges sorted ascending by size
 while (my $linedist = <F1>) {
 
@@ -229,12 +229,12 @@ open (F11, ">/tmp/input/-1") || die ("Could not open file!"); 	# file containing
 				open (F10, ">/tmp/input/$temp") || die ("Could not open file!"); 	# file containing cluster statistics
 
 				$temp++;
-				while (defined $current) {
+		while (defined $current) {
 					if ($labels[$current->[0]] > 0) {
 						$clustrel[$i]++; # instance with label > 0
 
 					}
-					if ($size[$i]<50){
+					if ($size[$i]<$th){
 						print F11 "$labels[$current->[0]] $qids[$current->[0]] ";
 					}
 					else{
@@ -244,14 +244,14 @@ open (F11, ">/tmp/input/-1") || die ("Could not open file!"); 	# file containing
 					if(defined $unlabeledset[$current->[0]]){
                                            # print "$#{$unlabeledset[$current->[0]]}\n";
 
-                                            for (my $j=0; $j<=64; $j++) {
+                                            for (my $j=0; $j<64; $j++) {
 																										my $feature_temp=$j+1;
                                                     if(! defined $centroids[$i][$j]) {
                                                         $centroids[$i][$j]=0;
                                                     }
                                                     if(  defined $unlabeledset[$current->[0]][$j]){
                                                         $centroids[$i][$j] += $unlabeledset[$current->[0]][$j];
-																												if ($size[$i] <50){
+																												if ($size[$i] <$th){
 																														print F11 "$feature_temp:$unlabeledset[$current->[0]][$j] ";
 																												}else{
 																													  print F10 "$feature_temp:$unlabeledset[$current->[0]][$j] ";
@@ -260,19 +260,19 @@ open (F11, ">/tmp/input/-1") || die ("Could not open file!"); 	# file containing
 
                                                     }else{
                                                         $unlabeledset[$current->[0]][$j]=0.0;
-																												if ($size[$i] <50){
-																													print F11 "$feature_temp:0.0 ";
-																												}
-																												else{
-																													print F10 "$feature_temp:0.0 ";
-																												}
+                                                                                                                                                                                                                                                        if ($size[$i] <$th){
+                                                                                                                                                                                                                                                                print F11 "$feature_temp:0.0 ";
+                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                        else{
+                                                                                                                                                                                                                                                                print F10 "$feature_temp:0.0 ";
+                                                                                                                                                                                                                                                        }
                                                     }
                                                     #print($centroids[$i][$j]);
 
                                             }
 					}
 					$current = $current->[1];
-					if ($size[$i] <50){
+					if ($size[$i] <$th){
 						print F11 "\n";
 					}
 					else{
@@ -281,8 +281,7 @@ open (F11, ">/tmp/input/-1") || die ("Could not open file!"); 	# file containing
 				}
 
 			}
-		}
-
+}
 		# now process the centroids
 		my $temp=0;
 		open (F4, ">$resultfolder/clusthist-$currsize.txt") || die ("Could not open file!"); 	# file containing cluster statistics
@@ -334,7 +333,7 @@ open (F11, ">/tmp/input/-1") || die ("Could not open file!"); 	# file containing
                                                 print F5 "$labels[$mininst] $qids[$mininst] ";
                                         }
 
-                                        for (my $j=0; $j<=64; $j++) {
+                                        for (my $j=0; $j<64; $j++) {
                                                 my $feat = $j+1;
 
                                                 print F5 "$feat:$unlabeledset[$mininst][$j] "; # prints feature as "featnum:featval "

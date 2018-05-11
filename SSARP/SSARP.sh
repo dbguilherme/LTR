@@ -6,7 +6,7 @@ partitions=5 # numero de particoes a ser usado
 binsfrom=10 # numero de bins (de)
 binsto=10 # numero de bins (ate)
 
-
+main_file_letor=$4
 # roda do Fold1 ao Fold5
 i=$3;
 while [ $i -le 1 ]; do
@@ -23,11 +23,11 @@ while [ $i -le 1 ]; do
 	fi
 	rm /tmp/SecondRoundSelection.txt$i
 	rm -r ../features_train_TUBE$suffix.txt
-	j=0
+	j=231
 	
 	
 	rm "/tmp/newTrain"
-	while  [ $j -le 1000 ]; do
+	while  [ $j -le 231 ]; do
 				train="/tmp/input/$j"
 				temp=`wc -l < $train`
 				if [ $j -eq 0 ]; then
@@ -50,10 +50,11 @@ while [ $i -le 1 ]; do
 					 continue
 				 fi
 				echo "*******tamanho do treinamento  $temp do arquivo $j"
+				cat /tmp/SecondRoundSelection.txt$i >> $train
+				
                                 echo "arquivo /tmp/SecondRoundSelection.txt$i --->`wc -l < /tmp/SecondRoundSelection.txt$i`"
 				cp $train "/tmp/newTrain"
-				train="/tmp/newTrain"
-				#cat /tmp/SecondRoundSelection.txt$i >> $train
+				train="/tmp/newTrain"				
 				if [ -f $train ]; then
 
 					echo "\n\n run query $j $train\n"
@@ -61,7 +62,7 @@ while [ $i -le 1 ]; do
 					rm ../train.txt.arff$i
 					rm ../train.txt.arff
 					if [ ! -f  ../train.txt.arff ]; then
-                                            ../../convert_letor_to_weka ../train.txt $numfeatures > ../train.txt.arff
+                                            ../../convert_letor_to_weka $main_file_letor $numfeatures > ../train.txt.arff
                                         
                                            
                                         echo "Gerando os bins TUBE..."

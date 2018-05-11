@@ -1,14 +1,14 @@
 ===== PPSS Item Log File =====
 Host:		guilherme-OptiPlex-7010
-Process:	31816
+Process:	2637
 Item:		features_5_train.txt
-Start date:	Mai 09 16:03:43
+Start date:	Mai 10 17:34:35
 
 alac_features_5_train.txt
-                               arquivo não vazio 50  1044 1044 0
-inserting instance 310042 into alac_features_5_train.txt
-                               arquivo não vazio 50  1045 1044 1
-instance 310042 already inserted... terminating
+                               arquivo não vazio 17  3242 3242 0
+inserting instance 2996010 into alac_features_5_train.txt
+                               arquivo não vazio 17  3243 3242 1
+instance 2996010 already inserted... terminating
 total of 1 instances inserted into training set
 
 Status:		SUCCESS
